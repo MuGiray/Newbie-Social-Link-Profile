@@ -1,0 +1,86 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* Yatay olarak ortalamak için */
+}
+
+.profile {
+  text-align: center;
+  background-color: #1f1f1f; /* Arka plan rengini daha koyu yapalım */
+  padding: 20px;
+  border-radius: 12px; /* Kenarları yuvarlatma */
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: -10px; /* Başlık altında biraz boşluk bırakın */
+}
+
+.location {
+  color: hsl(75, 94%, 57%)
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Sosyal medya bağlantılarını dikey hizalayın */
+  align-items: center;
+}
+
+.social-links li {
+  margin: 10px 0; /* Her bağlantı arasında boşluk bırakın */
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #3b3b3b;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  width: 200px; /* Bağlantıların genişliğini sabitleyin */
+  text-align: center; /* Metni ortalayın */
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: hsl(75, 94%, 57%);
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #45a29e; /* Attribution bağlantı rengini ayarlayın */
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .social-links a {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
